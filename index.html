@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treact</title>
     <link rel="stylesheet" href="styles.css">
     <script
       src="https://kit.fontawesome.com/6487f0a3d4.js"
@@ -30,7 +31,7 @@
             <a href="#" class="nav__link login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
-          <button class="btn__menu" onclick="openMenu()">
+          <button class="btn__menu" onclick="openMenu()" aria-label="Open menu" title="Open menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -51,7 +52,7 @@
         </div>
       </nav>
       <div class="menu">
-        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()" aria-label="Close menu" title="Close menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -108,12 +109,14 @@
               <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
               <img
                 src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt="Trusted customer logos"
                 class="header__customers"
               />
             </div>
             <figure class="header__img--wrapper">
               <img
                 src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                alt="Hero illustration"
                 class="header__img"
               />
             </figure>
@@ -139,6 +142,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      alt="Secure icon"
                       class="feature__img"
                     />
                   </figure>
@@ -156,6 +160,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                      alt="Support icon"
                       class="feature__img"
                     />
                   </figure>
@@ -173,6 +178,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                      alt="Customizable icon"
                       class="feature__img"/>
                   </figure>
                   <div class="feature__text">
@@ -189,6 +195,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                      alt="Reliable icon"
                       class="feature__img"
                     />
                   </figure>
@@ -206,6 +213,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                      alt="Fast icon"
                       class="feature__img"
                     />
                   </figure>
@@ -223,6 +231,7 @@
                   <figure class="feature__img--wrapper">
                     <img
                       src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                      alt="Easy icon"
                       class="feature__img"
                     />
                   </figure>
@@ -258,6 +267,7 @@
             <figure class="quality__img--wrapper">
               <img
                 src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+                alt="Website preview"
                 class="quality__img"
               />
               <svg viewBox="0 0 1280 1280" class="quality__grid">
@@ -431,6 +441,7 @@
             <img
               class="values__img"
               src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+              alt="Prototype illustration"
             />
           </div>
         </div>
@@ -524,7 +535,7 @@
           <div class="row">
             <img
               src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
-              alt=""
+              alt="Happy clients illustration"
               class="testimonials__img"
             />
             <div class="testimonials__description">
@@ -558,6 +569,7 @@
                   <div class="testimonial__profile">
                     <img
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80"
+                      alt="Charlotte Hale"
                       class="testimonial__img"
                     />
                     <div class="testimonial__details">
@@ -566,7 +578,7 @@
                     </div>
                   </div>
                   <div class="testimonial__buttons">
-                    <button class="testimonial__button">
+                    <button class="testimonial__button" aria-label="Previous testimonial" title="Previous testimonial">
                       <svg
                         fill="none"
                         stroke="rgb(100,21,255)"
@@ -579,7 +591,7 @@
                       </svg>
                     </button>
                     <div class="divider"></div>
-                    <button class="testimonial__button">
+                    <button class="testimonial__button" aria-label="Next testimonial" title="Next testimonial">
                       <svg
                         fill="none"
                         stroke="rgb(100,21,255)"
